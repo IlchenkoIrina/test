@@ -1,0 +1,176 @@
+
+
+@font-face{ 
+	font-family: 'Stalinistone regular';
+	src: url('../fonts/stalinistone-regular-webfont.eot');
+	src: url('../fonts/stalinistone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/stalinistone-regular-webfont.woff') format('woff'),
+         url('../fonts/stalinistone-regular-webfont.woff2') format('woff2'),
+	     url('../fonts/stalinistone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/stalinistone-regular-webfont.svg#webfont') format('svg');
+}
+@font-face{     
+    font-family: 'Kurale regular';
+    src: url('../fonts/kurale-regular-webfont.eot');
+    src: url('../fonts/kurale-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kurale-regular-webfont.woff') format('woff'),
+         url('../fonts/kurale-regular-webfont.woff2') format('woff2'),
+         url('../fonts/kurale-regular-webfont.ttf') format('truetype'),
+         url('../fonts/kurale-regular-webfont.svg#webfont') format('svg');     
+}
+@font-face{     
+    font-family: 'Pattaya regular';
+    src: url('../fonts/pattaya-regular-webfont.eot');
+    src: url('../fonts/pattaya-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pattaya-regular-webfont.woff') format('woff'),
+         url('../fonts/pattaya-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pattaya-regular-webfont.ttf') format('truetype'),
+         url('../fonts/pattaya-regular-webfont.svg#webfont') format('svg');     
+}
+body {
+  font-family: 'Merienda One', cursive, sans-serif;  
+ padding: 10px; 
+    background: rgb(255, 255, 230);
+  }
+  header{/*width: 960px;*/
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../images/hand_embroidery/ornament_002.jpg) repeat center bottom;
+    background-color: aqua;}
+ footer{/*width: 960px;*/
+    height: 40px;
+    margin-left: 10px;
+    margin-top:  10px;
+    margin-right:  10px;
+    margin-bottom: 50px;
+    padding: 10px 10px 10px 10px;
+   /* background: url(../images/hand_embroidery/ornament_002.jpg) repeat center bottom;*/
+    background-color: darkred;
+  text-align: center;
+color:white;}
+  nav {
+    background: white;
+    box-shadow: 0 2px 0 0 #ECF1F2;
+    border-top: 1px solid rgb(167, 173, 248);
+    text-align: left;
+  }
+  nav a {
+    text-decoration: none;
+    display: block;
+    transition: .3s linear;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .topmenu > li {
+    display: inline-block;
+    position: relative;
+    margin-right: -4px;
+    border-left: 1px solid #ECF1F2;
+  }
+  .topmenu > li:last-child {border-right: 1px solid #ECF1F2;}
+  .topmenu > li > a {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1c1c1c;
+  }
+  
+  .topmenu .active, .topmenu > li > a:hover, .submenu li a:hover {color: #ddbe86;}
+  .submenu {
+    position: absolute;
+    left: -1px;
+    z-index: 1;
+    width: 240px;
+    border-bottom: 1px solid #ECF1F2;
+    visibility: hidden;
+    opacity: 0;  
+    /*transform: translateY(10px);*/
+    transition: .3s ease-in-out;
+  }
+  .submenu1 {
+    position: absolute;
+    top: 0;
+    left: 240px;
+    z-index: 4;
+    width: 240px;
+    border-bottom: 1px solid #ECF1F2;
+    visibility: hidden;
+    opacity: 0;  
+    /*transform: translateY(10px);*/
+    transition: .3s ease-in-out;
+  }
+  .submenu li {position: relative;}
+  .submenu1 li {position: relative;}
+  .submenu a {
+    background: white;
+    border-top: 1px solid #ECF1F2;
+    border-right: 1px solid #ECF1F2;
+    border-left: 1px solid #ECF1F2;
+    color: #1c1c1c;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+  }
+  .submenu .submenu {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 1px);
+    left: -webkit-calc(100% - 1px);
+  }
+  nav li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+      transform: translateY(0px);
+  }
+  nav li:hover > .submenu1 {
+    visibility: visible;
+    opacity: 1;
+      transform: translateY(0px);
+  }
+  .videoblock {
+    width:1000px; 
+   margin-left: 100px;
+   margin-right: auto;
+  background-color: lightcoral;
+}
+main {
+  /*float: center;
+  height:800px;*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  background: rgb(219, 251, 237);
+  padding: 10px 10px 10px 10px;
+}
+.div1 {
+  margin-left: auto;
+  margin-top:  10px;
+  margin-right:  auto;
+  margin-bottom:  10px;
+  width:45%;
+  text-align: justify;
+  vertical-align: middle; 
+  display:inline-block;
+}
+.div2{float: right;
+margin: 7px;}
+
+section {height:500px;}
+.clear {
+  clear: both;
+}
+h1{font-family: 'Stalinistone regular', cursive, sans-serif; 
+color: darkred }
+li a {text-decoration: none;}
+dt{text-align: justify;
+  }
+dd{text-align: justify;
+  font-size: 11px;
+ }
