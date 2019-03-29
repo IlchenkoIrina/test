@@ -6,8 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> ВЫШИВКИ</title>
     <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
+    <script language="JavaScript">
+      i=0;
+      img_a=new Array()
+      img_h=new Array()
+      img_a[0]=new Image()
+      img_a[1]=new Image()
+      img_a[2]=new Image()
+      img_a[3]=new Image()
+      img_a[4]=new Image()
+      img_a[5]=new Image()
+      img_a[0].src="images/hand_embroidery/images1.jpg"
+      img_a[1].src="images/hand_embroidery/images2.jpg"
+      img_a[2].src="images/hand_embroidery/images3.jpg"
+      img_a[3].src="images/hand_embroidery/images4.jpg"
+      img_a[4].src="images/hand_embroidery/images5.jpg"
+      img_a[5].src="images/hand_embroidery/images6.jpg"
+      function img_b()
+      {
+      document.images[0].src=img_a[i].src
+      document.images[0].src=img_a[i].src
+      document.images[0].src=img_a[i].src
+      document.images[0].src=img_a[i].src
+      document.images[0].src=img_a[i].src
+      document.images[0].src=img_a[i].src
+      i++
+      if(i>5) i=0;
+      setTimeout("img_b()", 3000)
+      }
+       
+      </script>
+   </head>
+<body onLoad=img_b()>
   
    <header>
   </header>
@@ -83,7 +113,8 @@
   <main>
      <section class="text">
        <article>
-         <img src="images/hand_embroidery/images.jpg" class="div2">
+        <!-- <img src="images/hand_embroidery/images.jpg" class="div2">-->
+         <img src="images/hand_embroidery/images1.jpg" class="div2">
            Вышивка, широко распространённый вид декоративно-прикладного искусства, в котором узор и изображение выполняются вручную (иглой, иногда крючком) или посредством вышивальной машины на различных тканях, коже, войлоке и других материалах льняными, хлопчатобумажными, шерстяными, шёлковыми (чаще цветными) нитями, а также волосом, бисером, жемчугом, драгоценными камнями, блёстками, монетами и т. п. Для шитых аппликаций (разновидность вышивки, часто с рельефным швом) используются ткани, мех, войлок, кожа. Вышивка применяется для украшения одежды, предметов быта, для создания самостоятельных декоративных панно. 
          Для нас вышиванка - не просто одежда. Это что-то очень особенное: личное, родное, святое. Вышивка - как символ сохраняет его корни, идентичность, понимание себя. Это наша история: мифология, религия, древнее искусство наших предков, душа нашего народа. И более того, в вышивке зашифровано наш генетический код.
         
